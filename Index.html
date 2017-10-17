@@ -1,171 +1,105 @@
 <!DOCTYPE html>
 <html>
   <head>
-
-	  <meta name="theme-color" content="#131314">
-	  <link rel="shortcut icon" type="image/x-icon" href="https://scontent.fmaa1-1.fna.fbcdn.net/v/t1.0-9/20729224_1335284149917568_3500247347536367263_n.jpg?oh=6314d364bcad78f4e35724671b73745d&oe=5A1FF003" />
-
+    <meta name="theme-color" content="#131314">
+    <link rel="shortcut icon" type="image/x-icon" href="https://scontent.fmaa1-1.fna.fbcdn.net/v/t1.0-9/20729224_1335284149917568_3500247347536367263_n.jpg?oh=6314d364bcad78f4e35724671b73745d&oe=5A1FF003"/>
+    <link rel="stylesheet" href="./index.css">
     <title>Nitin | Fullstack Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap  -->
     <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-
-	<style>
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #333333;
-  color: white;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-#myBtn:hover {
-  background-color: #555;
-}
-</style>
-
-	<style>
-
-	.blinking-cursor {
-  font-weight: 100;
-  font-size: 30px;
-  color: #ffffff;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
-}
-
-@keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: #ffffff;
-  }
-}
-
-@-moz-keyframes blink {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: #ffffff;
-  }
-}
-
-@-webkit-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: #ffffff;
-  }
-}
-
-@-ms-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: #ffffff;
-  }
-}
-
-@-o-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: #ffffff;
-  }
-}
-
-	</style>
-
-
-	<style>
-		html body {
-			background-color: rgba(19, 19, 20, 1);
-			{
-
-
-	</style>
-
-	<style>
-
-	.borderless table {
-    border-top-style: none;
-    border-left-style: none;
-    border-right-style: none;
-    border-bottom-style: none;
-	border: none;
-	border-bottom:none;
-	border-top:none;
-		}
-	</style>
-
-	<style>
-	th, td {
-    border-bottom: 0px ;
-	 border-top-style: none;
-    border-left-style: none;
-    border-right-style: none;
-    border-bottom-style: none;
-	border: none;
-	border-bottom:none;
-	border-top:none;
-}
-	</style>
-
-	<style>
-
-	hr {
-    display: block;
-    height: 2px;
-    border: 0;
-    border-top: 3px solid #333333;
-    margin: 1em 0;
-    padding: 0;
-		}
-
-
-
-
-
-		#load{
-    width:100%;
-    height:100%;
-    position:fixed;
-    z-index:9999;
-    background:url('loading.gif') no-repeat center center rgba(0,0,0,0.25);
-    background-size: 120px 120px;
-}
-
-	</style>
-
-	<script type="text/javascript">
- $(function() {
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <style>
+      #load {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 9999;
+        background: url('loading.gif') no-repeat center center rgba(0, 0, 0, 0.25);
+        background-size: 120px 120px;
+      }
+      .blinking-cursor {
+        font-weight: 100;
+        font-size: 30px;
+        color: #ffffff;
+        -webkit-animation: 1s blink step-end infinite;
+        -moz-animation: 1s blink step-end infinite;
+        -ms-animation: 1s blink step-end infinite;
+        -o-animation: 1s blink step-end infinite;
+        animation: 1s blink step-end infinite;
+      }
+      @keyframes "blink" {
+        from,
+        to {
+          color: transparent;
+        }
+        50% {
+          color: #ffffff;
+        }
+      }
+      @-moz-keyframes blink {
+        from,
+        to {
+          color: transparent;
+        }
+        50% {
+          color: #ffffff;
+        }
+      }
+      @-webkit-keyframes "blink" {
+        from,
+        to {
+          color: transparent;
+        }
+        50% {
+          color: #ffffff;
+        }
+      }
+      @-ms-keyframes "blink" {
+        from,
+        to {
+          color: transparent;
+        }
+        50% {
+          color: #ffffff;
+        }
+      }
+      @-o-keyframes "blink" {
+        from,
+        to {
+          color: transparent;
+        }
+        50% {
+          color: #ffffff;
+        }
+      }
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #333333;
+        color: white;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      #myBtn:hover {
+        background-color: #555;
+      }
+    </style>
+    <script type="text/javascript">
+    $(function() {
   $('#myModal').modal();
 });
-
 document.onreadystatechange = function() {
   var state = document.readyState;
   if (state == 'interactive') {
@@ -179,27 +113,20 @@ document.onreadystatechange = function() {
   }
 };
 </script>
-
   </head>
   <body>
-
-  <div id = "load">
-
-  </div>
-
-
-  <div id = "contents">
-	<div class = "container-fluid" style = " border: 0px solid #e60000 " >
-
-		<br>
-		<!-- <a name="top"></a> -->
-		<br>
-		<div class="visible-md visible-lg">
-		<br>
-		<br>
-		</div>
-	<!-- Modal -->
-<!--   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div id="load"></div>
+    <div id="contents">
+      <div class="container-fluid">
+        <br>
+        <!-- <a name="top"></a> -->
+        <br>
+        <div class="visible-md visible-lg">
+          <br>
+          <br>
+        </div>
+        <!-- Modal -->
+        <!--   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -215,477 +142,447 @@ document.onreadystatechange = function() {
     </div>
   </div>
 </div> -->
-
-
-	<div class = "row" style = " border: 0px solid orange">
-
-	<div class = "col-sm-offset-1 col-sm-2 col-xs-4 " style = "border: 0px solid white; padding-top: 15px; padding-bottom: 2px;" >
-		<img class = " img-circle pull-right" src = "https://scontent.fmaa1-1.fna.fbcdn.net/v/t1.0-9/20729224_1335284149917568_3500247347536367263_n.jpg?oh=6314d364bcad78f4e35724671b73745d&oe=5A1FF003" alt="Smiley face" style = "width: auto;height: 95px; ">
-	</div>
-
-	<div class = "col-sm-4 col-xs-8 " style = "border: 0px solid #ff0080;" >
-
-	<div class = "" >
-
-		<h4>
-
-		<font style="color:white; font-family: 'Ubuntu', sans-serif;" >
-
-		<a class = "" target='_blank' href='https://www.dropbox.com/s/r5ej4rbq0cmjv8z/Nitin.pdf?dl=0'
-
-			style="color:White; font-family: 'Ubuntu', sans-serif; ">
-
-			<b>Nitin Rachabathuni</b></a>
-
-
-		</font>
-
-		<span style="color:#ffffff" class='blinking-cursor' > | </span>
-
-		</h4>
-		<h5>
-		<p class = "" style="color:white; font-family: 'Ubuntu', sans-serif; line-height: 6px;">
-
-		<b>Programmer & Betta Hobbyist</b>
-
-		</p>
-		</h5>
-		<p class="small" style="color:#77b300; font-family: 'Ubuntu', sans-serif; line-height: 7px;" >
-
-		<a class = "" target='_blank' href='https://www.dropbox.com/s/r5ej4rbq0cmjv8z/Nitin.pdf?dl=0'
-
-			style="color:#77b300; font-family: 'Ubuntu', sans-serif;">
-
-			&#9673 AVAILABLE FOR HIRE</a>
-
-
-		</p>
-
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; " >
-
-		<a class = "" href='mailto:reachnitinvenkat@gmail.com'
-
-		style="color:White; font-family: 'Ubuntu', sans-serif; ">
-
-		reachnitinvenkat@gmail.com</a>
-
-		</p>
-
-
-	</div>
-
-	</div>
-
-	<div class="col-md-offset-2 col-md-3 visible-md visible-lg" style="border: 0px solid #ff0080" >
-
-	<br>
-
-	<a target='_blank' href='https://www.github.com/NitinBuzz/'>
-
-	<img src='Github.png' alt="GitHub" width="50" height="50">
-
-	</a>
-
-	<a target='_blank' href='https://www.facebook.com/nitinbuzz/'>
-
-	<img src='facebook.png' alt="Facebook" width="50" height="50">
-
-	</a>
-
-	<a target='_blank' href='https://www.twitter.com/nitinbuzzz'>
-
-	<img src='twitter.png' alt="Twitter" width="50" height="50">
-
-	</a>
-
-	<a target='_blank' href='https://www.linkedin.com/in/nitin-venkat-rachabathuni-4129abb6/'>
-
-	<img src='LinkedIn.png' alt="LinkedIn" width="50" height="50">
-
-	</a>
-
-
-
-
-	</div>
-
-	</div>
-
-
-	<br>
-	<br>
-	<br>
-
-	<div class="row" style="border: 0px solid #0080ff">
-		<h2>
-		<p class = "text-center" style="color:white; font-family: 'Ubuntu', sans-serif; " >
-
-			<b>
-			About me
-			</b>
-		</p>
-		</h2>
-
-		<div class= "col-sm-offset-2 col-sm-8 col-sm-offset-2"
-		style="border: 0px solid #ff080" >
-		<hr>​
-
-
-
-		<p style="border-left: 2px solid red; padding-left: 4px; color:white; font-family: 'Ubuntu', sans-serif;">
-		My name is Nitin, I'm a fullstack developer and Betta hobbyist based in Bangalore, India.
-		</p>
-
-		<p style="border-left: 2px solid yellow; padding-left: 4px; color:white; font-family: 'Ubuntu', sans-serif;">
-		I have experience with frontend and backend development, Database, System Administration and DevOps.
-		Specific skills are listed below.
-		</p>
-
-		<p style="border-left: 2px solid green; padding-left: 4px; color:white; font-family: 'Ubuntu', sans-serif;">
-		On my spare time, I like to contribute to open-source projects on GitHub, where I also have published
-		some projects on my own.
-		</p>
-
-		<p style="border-left: 2px solid orange; padding-left: 4px; color:white; font-family: 'Ubuntu', sans-serif;">
-		I am currently actively looking for part-time/full-time or freelance jobs as a Frontend and/or Backend developer.
-		If you know or have any opportunity, <a href='mailto:reachnitinvenkat@gmail.com'
-		style="color:White; font-family: 'Ubuntu', sans-serif; ">let me know</a>.
-		</p>
-
-		<p style="border-left: 2px solid aqua; padding-left: 4px; color:white; font-family: 'Ubuntu', sans-serif;">
-		I speak basic Spanish and English fluently.
-		</p>
-
-
-		<br><hr>
-		</div>
-	</div>
-
-	<div class="row" style="border: 0px solid #0080ff">
-		<h2>
-		<p class = "text-center" style="color:white; font-family: 'Ubuntu', sans-serif; " >
-		<br>
-			<b>
-			Skills
-			</b>
-		</p>
-		</h2>
-
-		<div class= "col-sm-offset-2 col-sm-8 col-sm-offset-2"
-		style="border: 0px solid #ff080" >
-
-
-		<div class = "row" >
-		<hr>
-
-
-
-
-		<div class="col-sm-12" >
-
-		<h3>  <p style="color:white; font-family: 'Ubuntu', sans-serif;"><b> Frontend Development </b></p>  </h3>
-
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">HTML, Bootstrap
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605&#x2605&#x2605 </span></p>
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">CSS
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605&#x2605</span></p>
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">JavaScript, JQuery
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605&#x2605 </span></p>
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">React JS
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605&#x2605</span></p>
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">Objected Oriented Programming
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605&#x2605&#x2605 </span></p>
-
-
-		</div>
-
-		</div>
-
-		<div class = "row" >
-		<hr>
-
-
-
-
-		<div class="col-sm-12" >
-
-		<h3>  <p style="color:white; font-family: 'Ubuntu', sans-serif;"><b> Backend Development </b></p>  </h3>
-
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">Node JS
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605&#x2605&#x2605 </span></p>
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">MongoDB
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605&#x2605&#x2605 </span></p>
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">Java
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605&#x2605&#x2605 </span></p>
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">Python
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605&#x2605 </span></p>
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">SQL
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605&#x2605&#x2605 </span></p>
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">Vis JS
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605&#x2605 </span></p>
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">PHP
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605 </span></p>
-
-
-		</div>
-
-		</div>
-
-		<div class = "row" >
-		<hr>
-
-
-
-
-		<div class="col-sm-12" >
-
-		<h3>  <p style="color:white; font-family: 'Ubuntu', sans-serif;"><b> Other Skills </b></p>  </h3>
-
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">System Administration
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605 </span></p>
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">Virtualization
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605&#x2605 </span></p>
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">Open Stack
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605 </span></p>
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">Active Directory
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605&#x2605 </span></p>
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">IIS
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605 </span></p>
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">Cloud Middleware
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605 </span></p>
-		<p style="color:white; font-family: 'Ubuntu', sans-serif; ">Git, SVN
-		<span class = "pull-right" style="color:yellow; font-family: 'Ubuntu', sans-serif; ">&#x2605&#x2605&#x2605 </span></p>
-
-
-		</div>
-
-		</div>
-
-		</div>
-	</div>
-
-	<div class = "row" >
-
-
-
-
-	<div class="col-sm-offset-2 col-sm-8 col-sm-offset-2" >
-
-	<hr>
-	<br>
-	<h2>  <p class = "text-center" style="color:white; font-family: 'Ubuntu', sans-serif;"> <b> Projects & Repositories </b> </p>  </h2>
-
-	<hr>
-
-
-	<h3>
-	<a target='_blank' href='https://github.com/NitinBuzz/nitin.github.io'>
-
-
-	 <p style="color:white; font-family: 'Ubuntu', sans-serif;"><b>Resume </b><span style='font-size:14px;margin-left:5px;'>[updated]</span> </p> </a> </h4>
-		<p class="" style="color:white; font-family: Ubuntu; font-size:80%; margin-bottom:16px; line-height: 11px;" >
-
-
-		 HTML5, CSS3, Bootstrap, JavaScript.
-
-		</p>
-    <p style="color:white; font-family: Ubuntu;  font-size:110%; ">
-	An interactive page for my resume.
-	</p>
-
-  <h4>
-  <a target='_blank' href='https://github.com/NitinBuzz/Node-Chat-APP'>
-   <p style="color:white; font-family: 'Ubuntu', sans-serif; margin-top: 40px;"><b>Node.js Chat App </b></p> </a> </h4>
-	<p class="" style="color:white; font-family: Ubuntu; font-size:80%; margin-bottom:16px; line-height: 11px;" >
-
-     Node.js, express.js, socket.io, mustache.js, HTML5, CSS3, ES6 JavaScript & jQuery.
-
-    </p>
-	<p style="color:white; font-family: Ubuntu;  font-size:110%; ">
-
-  This is a Chat Application built using Node.js powered by socket.io and express that allows users to Create/Join any room of choice and chat.
-  </p>
-
-  <h4>
-  <a target='_blank' href='https://github.com/NitinBuzz/KLUWorldWide'>
-   <p style="color:white; font-family: 'Ubuntu', sans-serif; margin-top: 40px;"><b>KLU World Wide </b><span style='font-size:14px;margin-left:5px;'>[in dev state]</span> </p> </a> </h4>
-  <p class="" style="color:white; font-family: Ubuntu; font-size:80%; margin-bottom:16px; line-height: 11px;" >
-
-     Node.js, express.js, socket.io, mustache.js, HTML5, CSS3, ES6 JavaScript & jQuery.
-
-    </p>
-  <p style="color:white; font-family: Ubuntu;  font-size:110%; ">
-  This is Node & React app that will bring KLU'ians across the globe under one roof.
-  </p>
-
-  <h4>
-  <a target='_blank' href='https://github.com/NitinBuzz/Tic-Tac-Toe-With-React'>
-   <p style="color:white; font-family: 'Ubuntu', sans-serif; margin-top: 40px;"><b>Tic Tac Toe Game </b> </p> </a> </h4>
-  <p class="" style="color:white; font-family: Ubuntu; font-size:80%; margin-bottom:16px; line-height: 4px;" >
-
-     React,js
-
-    </p>
-  <p style="color:white; font-family: Ubuntu;  font-size:110%; ">
-  This is a React Tic Tac Toe Game.
-  </p>
-
-  <h4>
-  <a target='_blank' href='https://github.com/NitinBuzz/Weather-App-with-Node.js'>
-   <p style="color:white; font-family: 'Ubuntu', sans-serif; margin-top: 40px;"><b>Node.js Weather App </b> </p> </a> </h4>
-  <p class="" style="color:white; font-family: Ubuntu; font-size:80%; margin-bottom:16px; line-height: 4px;" >
-
-     Node.js
-
-    </p>
-  <p style="color:white; font-family: Ubuntu;  font-size:110%; ">
-  This is a app that fetches weather report of given address.
-  </p>
-
-	<hr>
-	</div>
-	</div>
-
-	<div class="row">
-
-	<br>
-
-	<div class="col-sm-offset-2 col-sm-8 col-sm-offset-2" >
-
-	<h2>  <p class = "text-center" style="color:white; font-family: 'Ubuntu', sans-serif;"> <b> Work Experience </b> </p>  </h2>
-
-	<hr>
-
-	<h4>
-		<a target='_blank' href='https://www.infosys.com/'>
-	<p style="color:white; font-family: 'Ubuntu', sans-serif;"><b>
-
-		Infosys Ltd.   </b>
-	<sub style="color:orange; font-family: 'Ubuntu', sans-serif;"> May 2016 - Present</sub>
-	</p> </a> </h4>
-	<p style="color:white; font-family: 'Ubuntu', sans-serif; line-height: 2px">
-	Systems Engineer
-	</p><br>
-	<small> <p style="color:white; class:text-left font-family: 'Ubuntu', sans-serif;"> &#x25c9 <b>DESCRIPTION </b></p> </small>
-
-	<p class="text-left" style="color:white; font-family: 'Ubuntu', sans-serif;">
-	Infosys is a global leader in technology services and consulting.
-	It enable clients in more than 50 countries to create and execute
-	strategies for their digital transformation. From engineering to
-	application development, knowledge management and business process
-	management, Infosys helps clients find
-	the right problems to solve, and to solve these effectively.
-	</p>
-
-	<small> <p style="color:white; font-family: 'Ubuntu', sans-serif;"> &#x25c9<b> RESPONSABILITIES</b> </p> </small>
-
-	<p class="text-left" style="color:white;  font-family: 'Ubuntu', sans-serif;">
-	On Infosys I'm responsible for managing, supporting and debugging Cloud Management Portal & Cloud Middleware so that
-	we have a redundant, zero-downtime application and doing monthly frontend & backend development works.
-	</p>
-
-	<small> <p style="color:white; font-family: 'Ubuntu', sans-serif;"> &#x25c9<b> TECHNOLOGIES </b></p> </small>
-
-	<p style="color:white; font-family: 'Ubuntu', sans-serif;">
-	Java, JavaScript, HTML/CSS, Jenkins, JBOSS, SQL, Linux...
-	</p>
-
-
-	<hr>
-	</div>
-
-	</div>
-
-	<div class="row">
-	<br>
-
-
-	<div class="col-sm-offset-2 col-sm-8 col-sm-offset-2" >
-
-	<h2>  <p class = "text-center" style="color:white; font-family: 'Ubuntu', sans-serif;"> <b> Contact Information </b> </p>  </h2>
-
-	<hr>
-
-	<h3>
-	<p class="" style="color:white; font-family: 'Ubuntu', sans-serif;">Send me an Anonymous Message</p>
-
-	</h3>
-	<p style="color:white; font-family: 'Ubuntu', sans-serif;">
-	<a href = "https://nitinbuzz.sarahah.com/" style="color:White; font-family: 'Ubuntu', sans-serif;"  target="_blank"> Sarahah</a></p>
-
-	<h3>  <p style="color:white; font-family: 'Ubuntu', sans-serif;">Email, Google Hangouts </p>  </h3>
-
-
-	<p style="color:white; font-family: 'Ubuntu', sans-serif;">
-	<a href='mailto:reachnitinvenkat@gmail.com' style="color:White; font-family: 'Ubuntu', sans-serif; ">reachnitinvenkat@gmail.com</a>
-	</p>
-
-	<h3>  <p style="color:white; font-family: 'Ubuntu', sans-serif;">Mobile Phone</p>  </h3>
-	<p style="color:white; font-family: 'Ubuntu', sans-serif;">
-	<a target="_blank" href='tel:+919642222836' style="color:White; font-family: 'Ubuntu', sans-serif; ">+91 9642222836</a>
-	</p>
-
-
-
-
-
-	<hr>
-	</div>
-
-	</div>
-
-	<div class="row">
-
-	<br>
-	<br>
-
-	<div class="col-sm-offset-2 col-sm-8 col-sm-offset-2" >
-
-	<!-- <p class = "text-center" style="color:white; font-family: 'Ubuntu', sans-serif;">
+        <div class="row">
+          <div class="col-sm-offset-1 col-sm-2 col-xs-4 ">
+            <img class=" profie-img img-circle pull-right" src="https://scontent.fmaa1-1.fna.fbcdn.net/v/t1.0-9/20729224_1335284149917568_3500247347536367263_n.jpg?oh=6314d364bcad78f4e35724671b73745d&oe=5A1FF003" alt="Smiley face" style="">
+          </div>
+          <div class="col-sm-4 col-xs-8 ">
+            <div class="header-details">
+              <h3>
+                <a id="my-name" target='_blank' href='https://www.dropbox.com/s/r5ej4rbq0cmjv8z/Nitin.pdf?dl=0'>
+                  <b>Nitin Rachabathuni</b>
+                </a>
+                <span class='blinking-cursor'>
+                  |
+                </span>
+              </h3>
+              <h5>
+                <p id="tag">
+                  <b>Fullstack Developer</b>
+                </p>
+              </h5>
+              <p id="status">
+                <a class="" target='_blank' href='https://www.dropbox.com/s/r5ej4rbq0cmjv8z/Nitin.pdf?dl=0'>
+                  &#9673 AVAILABLE FOR HIRE</a>
+              </p>
+              <p>
+                <a id="email" href='mailto:reachnitinvenkat@gmail.com'>
+                  reachnitinvenkat@gmail.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-offset-2 col-md-3 visible-md visible-lg" style="border: 0px solid #ff0080">
+            <br>
+            <a target='_blank' href='https://www.github.com/NitinBuzz/'>
+              <img src='Github.png' alt="GitHub" width="50" height="50">
+            </a>
+            <a target='_blank' href='https://www.facebook.com/nitinbuzz/'>
+              <img src='facebook.png' alt="Facebook" width="50" height="50">
+            </a>
+            <a target='_blank' href='https://www.twitter.com/nitinbuzzz'>
+              <img src='twitter.png' alt="Twitter" width="50" height="50">
+            </a>
+            <a target='_blank' href='https://www.linkedin.com/in/nitin-venkat-rachabathuni-4129abb6/'>
+              <img src='LinkedIn.png' alt="LinkedIn" width="50" height="50">
+            </a>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <h2>
+            <p class="text-center">
+              <b>
+                About me
+              </b>
+            </p>
+          </h2>
+          <div class="col-sm-offset-2 col-sm-8 col-sm-offset-2 about-me">
+            <hr>
+            <p id="name">
+              My name is Nitin, I'm a fullstack developer and Betta hobbyist based in Bangalore, India.
+            </p>
+            <p id="experience">
+              I have experience with frontend and backend development, Database, System Administration and DevOps. Specific skills are listed below.
+            </p>
+            <p id="spare-time">
+              On my spare time, I like to contribute to open-source projects on GitHub, where I also have published some projects on my own.
+            </p>
+            <p id="let-me-know">
+              I am currently actively looking for part-time/full-time or freelance jobs as a Frontend and/or Backend developer. If you know or have any opportunity,
+              <a href='mailto:reachnitinvenkat@gmail.com'>let me know</a>.
+            </p>
+            <p id="i-speak">
+              I speak basic Spanish and English fluently.
+            </p>
+            <hr>
+            <br>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class=" col-sm-offset-2 col-sm-8 col-sm-offset-2">
+            <div class="skills-header col-md-4">
+              <h2>
+                <p class="text-center">
+                  <br>
+                  <b>
+                    Experience & Skills
+                  </b>
+                </p>
+              </h2>
+            </div>
+            <div class=" skills col-md-8 ">
+              <div class="row">
+                <hr>
+                <h3>
+                  <p id="skill-sub-title">
+                    <b>
+                      Frontend Development
+                    </b>
+                  </p>
+                </h3>
+                <p id="skill">HTML, Bootstrap
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605&#x2605&#x2605
+                  </span>
+                </p>
+                <p id="skill">CSS
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605&#x2605</span>
+                </p>
+                <p id="skill">JavaScript, JQuery
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605&#x2605
+                  </span>
+                </p>
+                <p id="skill">React JS
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605&#x2605</span>
+                </p>
+                <p id="skill">OOPs
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605&#x2605&#x2605
+                  </span>
+                </p>
+              </div>
+              <div class="row">
+                <hr>
+                <h3>
+                  <p id="skill-sub-title">
+                    <b>
+                      Backend Development
+                    </b>
+                  </p>
+                </h3>
+                <p id="skill">Node JS
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605&#x2605&#x2605
+                  </span>
+                </p>
+                <p id="skill">MongoDB
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605&#x2605&#x2605
+                  </span>
+                </p>
+                <p id="skill">Java
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605&#x2605&#x2605
+                  </span>
+                </p>
+                <p id="skill">Python
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605&#x2605
+                  </span>
+                </p>
+                <p id="skill">SQL
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605&#x2605&#x2605
+                  </span>
+                </p>
+                <p id="skill">Vis JS
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605&#x2605
+                  </span>
+                </p>
+                <p id="skill">PHP
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605
+                  </span>
+                </p>
+              </div>
+              <div class="row">
+                <hr>
+                <h3>
+                  <p id="skill-sub-title">
+                    <b>
+                      Other Skills
+                    </b>
+                  </p>
+                </h3>
+                <p id="skill">System Administration
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605
+                  </span>
+                </p>
+                <p id="skill">Virtualization
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605&#x2605
+                  </span>
+                </p>
+                <p id="skill">Open Stack
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605
+                  </span>
+                </p>
+                <p id="skill">Active Directory
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605&#x2605
+                  </span>
+                </p>
+                <p id="skill">IIS
+                  <span class="pull-right" id="rating">&#x2605&#x2605
+                  </span>
+                </p>
+                <p id="skill">Cloud Middleware
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605
+                  </span>
+                </p>
+                <p id="skill">Git, SVN
+                  <span class="pull-right" id="rating">&#x2605&#x2605&#x2605
+                  </span>
+                </p>
+                <hr>
+              </div>
+              <br>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class=" projects col-sm-offset-2 col-sm-8 col-sm-offset-2">
+            <div class="project-header col-md-4">
+              <br>
+              <h2>
+                <p class="text-center">
+                  <b>
+                    Projects & Repositories
+                  </b>
+                </p>
+              </h2>
+            </div>
+            <div class="col-md-8">
+              <hr>
+              <h3>
+                <a id="project-title" target='_blank' href='https://github.com/NitinBuzz/nitin.github.io'>
+                  <p>
+                    <b>Resume
+                    </b>
+                    <span >[updated]</span>
+                  </p>
+                </a>
+              </h4>
+              <p id="project-skills">
+                HTML5, CSS3, Bootstrap, JavaScript.
+              </p>
+              <p id="project-discription">
+                An interactive page for my resume.
+                <div id="project-hr"></div>
+              </p>
+              <div>
+                <h4>
+                  <a id="project-title" target='_blank' href='https://github.com/NitinBuzz/Node-Chat-APP'>
+                    <p >
+                      <b>Node.js Chat App
+                      </b>
+                    </p>
+                  </a>
+                </h4>
+                <p id="project-skills">
+                  Node.js, express.js, socket.io, mustache.js, HTML5, CSS3, ES6 JavaScript & jQuery.
+                </p>
+                <p id="project-discription">
+                  This is a Chat Application built using Node.js powered by socket.io and express that allows users to Create/Join any room of choice and chat.
+                  <div id="project-hr"></div>
+                </p>
+              </div>
+              <div>
+                <h4>
+                  <a id="project-title" target='_blank' href='https://github.com/NitinBuzz/KLUWorldWide'>
+                    <p >
+                      <b>KLU World Wide
+                      </b>
+                      <span >[in dev state]</span>
+                    </p>
+                  </a>
+                </h4>
+                <p id="project-skills">
+                  Node.js, express.js, socket.io, mustache.js, HTML5, CSS3, ES6 JavaScript & jQuery.
+                </p>
+                <p id="project-discription">
+                  This is Node & React app that will bring KLU'ians across the globe under one roof.
+                  <div id="project-hr"></div>
+                </p>
+              </div>
+              <div>
+                <h4>
+                  <a id="project-title" target='_blank' href='https://github.com/NitinBuzz/Tic-Tac-Toe-With-React'>
+                    <p>
+                      <b>Tic Tac Toe Game
+                      </b>
+                    </p>
+                  </a>
+                </h4>
+                <p id="project-skills">
+                  React,js
+                </p>
+                <p id="project-discription">
+                  This is a React Tic Tac Toe Game.
+                  <div id="project-hr"></div>
+                </p>
+              </div>
+              <div>
+                <h4>
+                  <a id="project-title" target='_blank' href='https://github.com/NitinBuzz/Weather-App-with-Node.js'>
+                    <p >
+                      <b>Node.js Weather App
+                      </b>
+                    </p>
+                  </a>
+                </h4>
+                <p id="project-skills">
+                  Node.js
+                </p>
+                <p id="project-discription">
+                  This is a app that fetches weather report of given address.
+                </p>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+          <br>
+          <div class=" work-exp col-sm-offset-2 col-sm-8 col-sm-offset-2">
+            <div class="work-header col-md-4">
+              <h2>
+                <p class="text-center">
+                  <b>
+                    Work Experience
+                  </b>
+                </p>
+              </h2>
+            </div>
+            <div class="col-md-8">
+              <hr>
+              <h4>
+                <a id="company" target='_blank' href='https://www.infosys.com/'>
+                  <p >
+                    <b>
+                      Infosys Ltd.
+                    </b>
+                    <sub id="time-period">
+                      May 2016 - Present</sub>
+                  </p>
+                </a>
+              </h4>
+              <p id="my-role">
+                Systems Engineer
+              </p><br>
+              <small>
+                <p id="dis-head">
+                  &#x25c9
+                  <b>DESCRIPTION
+                  </b>
+                </p>
+              </small>
+              <p class="text-left" id="discription">
+                Infosys is a global leader in technology services and consulting. It enable clients in more than 50 countries to create and execute strategies for their digital transformation. From engineering to application development, knowledge management and
+                business process management, Infosys helps clients find the right problems to solve, and to solve these effectively.
+              </p>
+              <small>
+                <p id="res-head">
+                  &#x25c9<b>
+                    RESPONSABILITIES</b>
+                </p>
+              </small>
+              <p class="text-left" id="my-responsibulities">
+                On Infosys I'm responsible for managing, supporting and debugging Cloud Management Portal & Cloud Middleware so that we have a redundant, zero-downtime application and doing monthly frontend & backend development works.
+              </p>
+              <small>
+                <p id="skills-used-head">
+                  &#x25c9<b>
+                    TECHNOLOGIES
+                  </b>
+                </p>
+              </small>
+              <p id="skills-used">
+                Java, JavaScript, HTML/CSS, Jenkins, JBOSS, SQL, Linux...
+              </p>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+          <br>
+          <div class=" col-sm-offset-2 col-sm-8 col-sm-offset-2">
+            <div class="contact-head col-md-4">
+              <h2>
+                <p class="text-center">
+                  <b>
+                    Contact Information
+                  </b>
+                </p>
+              </h2>
+            </div>
+            <!-- <hr> -->
+            <div class=" contact col-md-8">
+              <hr>
+              <h3>
+                <p id="sarahah-head">Send me an Anonymous Message</p>
+              </h3>
+              <p id="sarahah-body">
+                <a href="https://nitinbuzz.sarahah.com/" target="_blank">
+                  Sarahah</a>
+              </p>
+              <h3>
+                <p id="email-head">Email, Google Hangouts
+                </p>
+              </h3>
+              <p id="email-body">
+                <a href='mailto:reachnitinvenkat@gmail.com'>reachnitinvenkat@gmail.com</a>
+              </p>
+              <h3>
+                <p id="mobo-head">Mobile Phone</p>
+              </h3>
+              <p id="mobo-body">
+                <a target="_blank" href='tel:+919642222836'>+91 9642222836</a>
+              </p>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <br>
+          <br>
+          <div class="col-sm-offset-2 col-sm-8 col-sm-offset-2">
+            <!-- <p class = "text-center" style="color:white; font-family: 'Ubuntu', sans-serif;">
 
 	<a href="#top" style="color:#b30000; font-family: 'Ubuntu', sans-serif; "> Back to top </a>
 
 	</p> -->
-
-	<p class = "text-center" style="color:white; font-family: 'Ubuntu', sans-serif;">
-	<b>
-	made with
-	</b>
-	<font size="5" style="color:#b30000;">
-	&hearts;
-	</font>
-	<b>
-
-	by nitin
-	</b>
-	</p>
-
-
-
-
-
-
-
-	</div>
-
-	</div>
-
-
-	</div>
-	</div>
-
-
-	<button onclick="topFunction()" id="myBtn" title="Go to top">
-		Top
-	</button>
-
-
-
-	<script>
-window.onscroll = function() {
+            <br>
+            <p class="text-center" id="love">
+              <b>
+                made with
+              </b>
+              <font size="6" style="color:#b30000;">
+                &hearts;
+              </font>
+              <b>
+                by nitin
+              </b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      Top
+    </button>
+    <script>
+    window.onscroll = function() {
   scrollFunction();
 };
-
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById('myBtn').style.display = 'block';
@@ -693,14 +590,16 @@ function scrollFunction() {
     document.getElementById('myBtn').style.display = 'none';
   }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  $('html, body').animate({ scrollTop: 0 }, 'slow');
+  $('html, body').animate(
+    {
+      scrollTop: 0
+    },
+    'slow'
+  );
   return false;
 }
 </script>
-
-
   </body>
 </html>
