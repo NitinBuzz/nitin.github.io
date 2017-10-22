@@ -47,12 +47,13 @@ html body h1:hover {
   font-weight: bold;
 }
 .header-details #tag {
-  margin-top: 0;
+  margin-top: 0px;
   line-height: 0px;
 }
 .header-details #status {
-  line-height: 14px;
   margin: 0;
+  line-height: 20px;
+  margin-top: 0px;
 }
 .header-details #status a {
   color: #408000;
@@ -68,6 +69,16 @@ html body h1:hover {
 .header-details #email a {
   margin: 0;
   line-height: 0px;
+}
+
+.social-networkings {
+  left: -40px;
+}
+.social-networkings a {
+  vertical-align: -40px;
+  font-size: 130%;
+  font-weight: bold;
+  word-spacing: 17px;
 }
 
 .about-me {
@@ -86,7 +97,7 @@ html body h1:hover {
   padding-left: 4px;
 }
 .about-me #let-me-know {
-  border-left: 2px solid #4286f4;
+  border-left: 2px solid #0088cc;
   padding-left: 4px;
 }
 .about-me #i-speak {
@@ -175,7 +186,8 @@ html body h1:hover {
   padding: 0;
   margin: 0;
   font-size: 100%;
-  margin-bottom: 15px;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 .projects #project-skills p {
   padding: 0;
@@ -239,4 +251,5 @@ html body h1:hover {
 
 #love {
   font-size: 120%;
+  word-spacing: 5px;
 }
